@@ -1,0 +1,72 @@
+:root{
+    /* 
+        width standard
+        width section 33 
+        add variables file? 
+         */
+
+}
+
+/* font- legge i egen fil?*/
+
+body {
+    background-color: rgb(237, 238, 226);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+.image-container {
+    display:block;
+    width: 100vw;
+    height: -100vh;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.content-container {
+    display:block;
+    width:100vw;
+    height:55vh;
+    
+}
+
+.left-content, .middle-content, .right-content {
+    display:inline-block;
+    width: 33vw; /* make variable? */
+    height:inherit; /* make variable? (inherit- height from parent element)*/
+    
+}
+
+h2 {
+    padding:90px;
+    text-align: center;
+    color: rgb(235, 116, 98);
+}
+
+.hjertesaker, .stem-oss, .aktuelle-nyheter {
+    display:block;
+    width:100vw;
+    height:100vh;
+    background-color: orangered;
+    border: 2px solid white;
+
+}
+
+
+
+.footer {
+    display:block;
+    width:100vw;
+    height:40vh;
+    background-color:rgb(116, 114, 114);
+}
+
+.footer-nav, .footer-annet, .footer-some {
+    display: inline-block;
+    width: 33vw;
+    height:inherit;
+} 
+
