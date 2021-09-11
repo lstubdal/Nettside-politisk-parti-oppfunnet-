@@ -3,21 +3,25 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/svg" href="assets/images/mermaid.svg">
       <link rel="stylesheet" href="css/reset.css" />
+      <link rel="icon" type="image/svg" href="assets/images/mermaid.svg" />
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css?family=Dosis"
+      />
       <link rel="stylesheet" href="css/style.css" />
       <title>Havfruepartiet</title>
    </head>
 
    <body>
-      <header class="header">
+      <header class="header" id="#header">
          <div class="logo">
-            <img src="assets/images/mermaid.svg" alt="mermaid image">
+            <img src="assets/images/mermaid.svg" alt="mermaid image" />
          </div>
          <div class="header-nav">
-            <a href="#">Hjertesaker</a>
-            <a href="#">Nyheter</a>
-            <a href="#">Bli medlem</a>
+            <a href="#section1">Hjertesaker</a>
+            <a href="#section2">Hvorfor er havet viktig?</a>
+            <a href="#section3">Om partiet</a>
             <a href="#">Kontakt</a>
          </div>
       </header>
@@ -26,39 +30,52 @@
          <div class="title-box">
             <h1>HAVFRUEPARTIET</h1>
             <p>Bli med å redde havet!</p>
-            <button>Les mer</button>
+            <button>Bli medlem</button>
          </div>
       </div>
 
-      <section class="content-container" id="content-section">
-         <div class="left-content">
+      <section class="section" id="section0">
+         <div class="section-box">
             <h2>
                Våre<br />
                hjertesaker
             </h2>
          </div>
-         <div class="middle-content">
+         <div class="section-box">
             <h2>
                Hvorfor bli medlem<br />
                hos oss?
             </h2>
          </div>
-         <div class="right-content">
+         <div class="section-box">
             <h2>
-               Aktuelle<br />
-               nyheter
+               Derfor er <br />
+               havet viktig
             </h2>
          </div>
       </section>
 
-      <section class="hjertesaker">første section</section>
-      <section class="stem-oss">andre section</section>
-      <section class="aktuelle-nyheter">tredje section</section>
+      <section class="section" id="section1">første section</section>
+      <section class="section" id="section2">
+         <div class="section-box2">
+            <div class="seashell">
+               <img src="assets/images/seashell.png" />
+            </div>
+            
+            <h3>Hvorfor er havet så viktig?</h3>
+            <p>Havet dekker 70 prosent av overflaten på jorden og rommer 95 prosent av leveområdene på planeten vår. Det gir oss oksygen, mye av ferskvannet vi drikker og maten vi spiser. Klimaendringer, overfiske og forurensning truer livet i havet - og oss.</p>
+
+         </div>
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kIE6gb7F7Ws" title="La barna vokse opp med et sunt og levende hav" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="video om viktigheten av havet"></iframe>
+   
+      </section>
+      <section class="section" id="section3">tredje section</section>
 
       <footer class="footer">
-         <div class="footer-nav">footer navigation</div>
-         <div class="footer-annet">konakt, registerr etc</div>
-         <div class="footer-some">sosiale medier</div>
+         <div class="section-box">footer navigation</div>
+         <div class="section-box">konakt, registerr etc</div>
+         <div class="section-box">sosiale medier</div>
       </footer>
    </body>
 </html>

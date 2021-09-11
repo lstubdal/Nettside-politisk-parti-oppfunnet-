@@ -1,18 +1,62 @@
-:root {
-   /* 
+/* 
         width standard
         width section 33 
         add variables file? 
          */
-}
 
 /* font- legge i egen fil?*/
 
 body {
-   background-color: rgb(237, 238, 226);
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 13px;
+   background-color: rgb(243, 243, 241);
+   font-family: "Dosis";
+   font-size: 15px;
+}
+
+html {
    scroll-behavior: smooth;
+}
+
+h1 {
+   color: black;
+   text-align: center;
+   margin-top: 10%;
+   margin-bottom: 1%;
+   font-size: 2em;
+}
+
+h2 {
+   text-align: center;
+   color: rgb(235, 116, 98);
+   margin-top: 55%;
+}
+
+h3 {
+    
+    font-size: 2.5em;
+    margin-left: 10%;
+}
+
+
+p {
+   color: rgb(14, 24, 37);
+   padding: 15px;
+   text-align: center;
+   font-size: 2em;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   font-size: 1.5em;
+   padding: 20px;
+}
+
+a:hover {
+   color: rgb(173, 105, 201);
+}
+
+a.active {
+   color: lawngreen;
 }
 
 header {
@@ -26,71 +70,36 @@ header {
    width: 100vw;
    padding: 10px;
    text-align: center;
-   
-}
-
-a {
-   text-decoration: none;
-   color: black;
-   font-size: 1.5em;
-   padding:20px;
-}
-
-a:hover {
-   color: rgb(173, 105, 201);
-}
-
-a.active {
-   color: lawngreen;
 }
 
 .logo {
-    width: 1vw;
-    height:2vh;
-    padding:10px;
-   
-    
+   width: 1vw;
+   height: 2vh;
+   padding: 10px;
 }
 
 .frontpage-container {
    display: block;
    width: 100vw;
    height: 90vh;
-   border-top:2px solid rgb(233, 185, 168);
-   background-color:lightskyblue;
+   border-top: 2px solid rgb(16, 69, 138);
+   background-color: lightskyblue;
 }
 
-
-h1 {
-    color: black;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom:2%;
-    font-size: 2em;
-    
- }
- 
- p {
-     color:rgb(14, 24, 37);
-     padding:15px;
-     text-align: center;
-     font-size: 3em;
- }
-
- button {
-     background-color:rgb(56, 81, 156);
-     color: whitesmoke;
-     margin-left:38%;
-     margin-top: 4%;
-     padding:12px 45px 12px 45px;
-     font-size: 1.5em;
-     border:none;
-     border-radius: 2px;
-     cursor: pointer;
- }
- button:hover {
-     background-color:darkblue;
- }
+button {
+   background-color: rgb(56, 81, 156);
+   color: whitesmoke;
+   margin-left: 36%;
+   margin-top: 4%;
+   padding: 12px 50px 12px 50px;
+   font-size: 1.5em;
+   border: none;
+   border-radius: 2px;
+   cursor: pointer;
+}
+button:hover {
+   background-color: darkblue;
+}
 
 /*img {
    display: inline-block;
@@ -101,51 +110,57 @@ h1 {
 }*/
 
 .title-box {
+   display: inline-block;
+   position: absolute;
+   margin-top: 8%;
+   width: 50vw;
+   height: 40vh;
+   padding: 10px;
+   margin-left: 25%;
+}
+
+
+.section-box {
+   display: inline-block;
+   width: 33vw;
+}
+
+.section-box2 {
     display: inline-block;
-    position: absolute;
-    margin-top: 8%;
     width: 50vw;
-    height: 40vh;
-    padding: 10px;
-    margin-left:25%;
+
  }
 
-.content-container {
-   display: block;
-   position: relative;
-   width: 100vw;
-   height: 100vh;
-}
 
-
-
-
-.left-content,
-.middle-content,
-.right-content {
-   display: inline-block;
-   width: 33vw; /* make variable? */
-   
-}
-
-h2 {
-   text-align: center;
-   color: rgb(235, 116, 98);
-   margin-top: 55%;;
-  
-}
-
-.hjertesaker,
-.stem-oss,
-.aktuelle-nyheter {
+section {
    display: block;
    width: 100vw;
    height: 100vh;
    background-color: beige;
    border: 2px solid white;
-  
-   
 }
+
+#section2 .section-box2 {
+    text-align: center;
+    margin-top:10%;
+}
+
+#section2  h3 {
+    text-align: left;
+    margin-left:5%;
+
+}
+
+#section p {
+    font-size: 1em;
+}
+
+
+.seashell img {
+    opacity: 65%;
+    width: 4.5vw;
+    height: 9vh;
+ }
 
 .footer {
    display: block;
@@ -154,10 +169,3 @@ h2 {
    background-color: rgb(116, 114, 114);
 }
 
-.footer-nav,
-.footer-annet,
-.footer-some {
-   display: inline-block;
-   width: 33vw;
-   height: inherit;
-}
