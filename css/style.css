@@ -1,72 +1,163 @@
-:root{
-    /* 
+:root {
+   /* 
         width standard
         width section 33 
         add variables file? 
          */
-
 }
 
 /* font- legge i egen fil?*/
 
 body {
-    background-color: rgb(237, 238, 226);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: rgb(237, 238, 226);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 13px;
+   scroll-behavior: smooth;
 }
-    
-.image-container {
-    display:block;
-    width: 100vw;
-    height: -100vh;
+
+header {
+   background-color: mintcream;
+   display: block;
+}
+
+.header-nav {
+   display: inline-block;
+   height: 10vh;
+   width: 100vw;
+   padding: 10px;
+   text-align: center;
    
 }
 
-img {
-    max-width: 100%;
-    height: auto; 
+a {
+   text-decoration: none;
+   color: black;
+   font-size: 1.5em;
+   padding:20px;
 }
+
+a:hover {
+   color: rgb(173, 105, 201);
+}
+
+a.active {
+   color: lawngreen;
+}
+
+.logo {
+    width: 1vw;
+    height:2vh;
+    padding:10px;
+   
+    
+}
+
+.frontpage-container {
+   display: block;
+   width: 100vw;
+   height: 90vh;
+   border-top:2px solid rgb(233, 185, 168);
+   background-color:lightskyblue;
+}
+
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom:2%;
+    font-size: 2em;
+    
+ }
+ 
+ p {
+     color:rgb(14, 24, 37);
+     padding:15px;
+     text-align: center;
+     font-size: 3em;
+ }
+
+ button {
+     background-color:rgb(56, 81, 156);
+     color: whitesmoke;
+     margin-left:38%;
+     margin-top: 4%;
+     padding:12px 45px 12px 45px;
+     font-size: 1.5em;
+     border:none;
+     border-radius: 2px;
+     cursor: pointer;
+ }
+ button:hover {
+     background-color:darkblue;
+ }
+
+/*img {
+   display: inline-block;
+   width: 100vw;
+   height: auto;
+   opacity: 90%;
+   
+}*/
+
+.title-box {
+    display: inline-block;
+    position: absolute;
+    margin-top: 8%;
+    width: 50vw;
+    height: 40vh;
+    padding: 10px;
+    margin-left:25%;
+ }
 
 .content-container {
-    display:block;
-    width:100vw;
-    height:55vh;
-    
+   display: block;
+   position: relative;
+   width: 100vw;
+   height: 100vh;
 }
 
-.left-content, .middle-content, .right-content {
-    display:inline-block;
-    width: 33vw; /* make variable? */
-    height:inherit; /* make variable? (inherit- height from parent element)*/
-    
+
+
+
+.left-content,
+.middle-content,
+.right-content {
+   display: inline-block;
+   width: 33vw; /* make variable? */
+   
 }
 
 h2 {
-    padding:90px;
-    text-align: center;
-    color: rgb(235, 116, 98);
+   text-align: center;
+   color: rgb(235, 116, 98);
+   margin-top: 55%;;
+  
 }
 
-.hjertesaker, .stem-oss, .aktuelle-nyheter {
-    display:block;
-    width:100vw;
-    height:100vh;
-    background-color: orangered;
-    border: 2px solid white;
-
+.hjertesaker,
+.stem-oss,
+.aktuelle-nyheter {
+   display: block;
+   width: 100vw;
+   height: 100vh;
+   background-color: beige;
+   border: 2px solid white;
+  
+   
 }
-
-
 
 .footer {
-    display:block;
-    width:100vw;
-    height:40vh;
-    background-color:rgb(116, 114, 114);
+   display: block;
+   width: 100vw;
+   height: 40vh;
+   background-color: rgb(116, 114, 114);
 }
 
-.footer-nav, .footer-annet, .footer-some {
-    display: inline-block;
-    width: 33vw;
-    height:inherit;
-} 
-
+.footer-nav,
+.footer-annet,
+.footer-some {
+   display: inline-block;
+   width: 33vw;
+   height: inherit;
+}
