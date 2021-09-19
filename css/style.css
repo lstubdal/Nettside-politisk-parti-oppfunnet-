@@ -191,61 +191,6 @@ form > input {
    
 }
 
-/* footer */
-footer {
-   display:flex;
-   flex-direction: row;
-   width:100%;
-   height:50vh;
-   justify-content: space-evenly;
-   background-color: rgba(0, 0, 0, 0.966);
-}
-
-.footer-item1, .footer-item2 {
-   height:28vh;
-   align-self: center;
-}
-
-.footer-item1 {
-   width: 60%;
-}
-
-.footer-item2 {
-   width: 23%;
-}
-
-.footer-item1 h3, .footer-item2 h3 {
-   font-size: 1.3em;
-   padding:30px;
-   color: var(--gold);
-}
-
-.textbox {
-   display: flex;
-   flex-direction: row;
-}
-
-.textbox a {
-   color: var(--gold);
-   text-decoration: none;
-   padding:35px;
-   font-size: 1.2em;
-}
-.textbox2 > p {
-   color: var(--gold);
-   text-decoration: none;
-   padding-left:30px;
-   font-size: 1.2em;
-}
-
-.textbox a:hover {
-   color: var(--light);
-}
-
-.textbox2 {
-   display: flex;
-   flex-direction: column;
-}
 
 /* section1 */
 #section1 > h2 {
@@ -450,3 +395,58 @@ footer {
    color: var(--dark);
 }
 
+/* footer */
+footer {
+   display:flex;
+   flex-direction: row;
+   width:100%;
+   height:50vh;
+   justify-content: space-evenly;
+   background-color: rgba(0, 0, 0, 0.966);
+}
+
+.footer-item1, .footer-item2 {
+   height:28vh;
+   align-self: center;
+}
+
+.footer-item1 {
+   width: 60%;
+}
+
+.footer-item2 {
+   width: 23%;
+}
+
+.footer-item1 h3, .footer-item2 h3 {
+   font-size: 1.3em;
+   padding:30px;
+   color: var(--gold);
+}
+
+.textbox {
+   display: flex;
+   flex-direction: row;
+}
+
+.textbox a {
+   color: var(--gold);
+   text-decoration: none;
+   padding:35px;
+   font-size: 1.2em;
+}
+.textbox2 > p {
+   color: var(--gold);
+   text-decoration: none;
+   padding-left:30px;
+   font-size: 1.2em;
+}
+
+.textbox a:hover {
+   color: var(--light);
+}
+
+.textbox2 {
+   display: flex;
+   flex-direction: column;
+}
