@@ -1,81 +1,199 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="css/reset.css" />
       <link rel="icon" type="image/svg" href="assets/images/mermaid.svg" />
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css?family=Dosis"
-      />
       <link rel="stylesheet" href="css/style.css" />
       <title>Havfruepartiet</title>
    </head>
 
+   <!-- add icon fp
+         legge titlebox i flex 1 item-->
+
    <body>
-      <header class="header" id="#header">
-         <div class="logo">
-            <img src="assets/images/mermaid.svg" alt="mermaid image" />
+      <!--header-->
+      <header class="flex-container">
+         <div class="flex-item logo">
+            <img src="assets/images/mermaid-logo.svg" />
          </div>
-         <div class="header-nav">
+         <div class="flex-item item1">
             <a href="#section1">Hjertesaker</a>
+         </div>
+         <div class="flex-item item2">
             <a href="#section2">Hvorfor er havet viktig?</a>
+         </div>
+         <div class="flex-item item3">
             <a href="#section3">Om partiet</a>
-            <a href="#">Kontakt</a>
+         </div>
+         <div class="flex-item item4">
+            <a href="nyhetsbrev.html" target="_blank">Nyhetsbrev</a>
          </div>
       </header>
-      <div class="frontpage-container">
-         <!--img src="assets/images/frontpage-img.jpg" alt="waves" /-->
-         <div class="title-box">
-            <h1>HAVFRUEPARTIET</h1>
-            <p>Bli med å redde havet!</p>
-            <button>Bli medlem</button>
+
+      <!--frontpage-->
+      <div class="flex-hero-container">
+         <div class="flex-hero-item">
+            <h1>Havfruepartiet</h1>
+         </div>
+         <div class="flex-hero-item">
+            <p>Redd havet i dag!</p>
+         </div>
+         <div class="flex-hero-item">
+            <div class="button1">
+               <a href="#">Bli medlem</a>
+            </div>
+         </div>
+         <div class="flex-hero-item arrow">
+            <div>
+               <a href="#section1">
+                  <img src="assets/images/arrow-frontpage.svg" />
+               </a>
+            </div>
          </div>
       </div>
 
-      <section class="section" id="section0">
-         <div class="section-box">
-            <h2>
-               Våre<br />
-               hjertesaker
-            </h2>
+
+      <!--hjertesaker section1-->
+      <section id="section1">
+         <h2>Våre hjertesaker</h2>
+         <div class="img-flex-container">
+            <div class="img-flex-item">
+               <div class="section1-img1">
+                  <a href="#">Plast i havet</a>
+               </div>
+            </div>
+            <div class="img-flex-item">
+               <div class="section1-img2">
+                  <a href="#">Minioritetsgruppers rettigheter</a>
+               </div>
+            </div>
+            <div class="img-flex-item">
+               <div class="section1-img3">
+                  <a href="#">Fiskeindustrien og overfiske</a>
+               </div>
+            </div>
+            <div class="img-flex-item">
+               <div class="section1-img4">
+                  <a href="#">Miljø og klima</a>
+               </div>
+            </div>
          </div>
-         <div class="section-box">
-            <h2>
-               Hvorfor bli medlem<br />
-               hos oss?
-            </h2>
-         </div>
-         <div class="section-box">
-            <h2>
-               Derfor er <br />
-               havet viktig
-            </h2>
+         <p>
+      
+      </section>
+
+      <!--hvorfor er havet vitkig? section2-->
+      <section id="section2">
+  
+         <div class="section2-flex">
+            <div class="section2-item">
+               <h2>Hvorfor er havet <br />så viktig?</h2>
+            </div>
+
+            <div class="section2-item video">
+               <iframe
+                  width="510"
+                  height="285"
+                  src="https://www.youtube.com/embed/ycRNlV5ylCc?controls=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  alt="video of impotance of ocean"
+                  allowfullscreen
+               ></iframe>
+               <a href="#"><b>LES MER</a></b>
+            </div>
+       
+      </div>
+      </section>
+
+       <!--section 3-->
+       <section id="section3">
+          <div class="section3-flex">
+          <div class="section3-item1"></div>
+          <div class="section3-item2">
+            <div class="form-container">
+            <h3>Bli medlem</h3> <br>
+              
+               <form action="result.html" method="GET">
+                  <label>Navn</label> <br>
+                  <input type="text" name="name" id="name" required> 
+                     <br>
+                     <br>
+                  <label>Etternavn</label> <br>
+                  <input type="text" name="ename" id="ename" required> 
+                     <br>
+                     <br>
+                  <label>Mail</label> <br>
+                  <input type="text" name="mail" id="mail" required>
+                  <br>
+                  <br>
+                  <label>Nummer</label> <br>
+                  <input type="text" name="nummer" id="nummer" required>
+                  <br>
+                  <br>
+                  <input type="submit" name="nummer" id="nummer" required>
+               </form>
+           
+            </div>  
+          </div>
          </div>
       </section>
 
-      <section class="section" id="section1">første section</section>
-      <section class="section" id="section2">
-         <div class="section-box2">
-            <div class="seashell">
-               <img src="assets/images/seashell.png" />
+      <!--section 4-->
+      <section id="section4">
+         <div class="section4-textbox">
+            <h2>Om Havfruepartiet</h2>
+            <div class="section4-flex">
+               <div class="section4-item1">
+                  <p>
+                     Klima- og naturkrisen ødelegger havet og er den største
+                     urettferdigheten i vår tid. Kortsiktig populisme, økende
+                     forskjeller og miljøødeleggelser truer friheten og
+                     tryggheten mange av oss har tatt for gitt. <br />
+                     <br />
+                     Motgiften er grønn politikk – og grønne politikere, som
+                     forstår at en bedre verden er mulig. Det krever at vi våger
+                     å tenke nytt, lytter til fagkunnskap og samarbeider på
+                     tvers av grenser.
+                  </p>
+               </div>
+               <div class="section4-item2">
+                  <img src="assets/images/seashell.png">
+               </div>
+               <div class="section4-item3">
+                  <p>I Havfruepartiet har vi som utgangspunkt at mennesker ikke er hevet over naturen og dyrene, men at vi er en del av den. Vi har tre viktige solidaritetsprinsipper for all vår politikk: solidaritet med andre mennesker, fremtidige generasjoner, og dyr og natur.<br><br> Vi er en del av en internasjonal, grønn grasrotbevegelse med et globalt perspektiv. Sosial rettferdighet for alle, uavhengig av klasse, legning eller hudfarge er sentrale verdier.</p>
+               </div>
             </div>
-            
-            <h3>Hvorfor er havet så viktig?</h3>
-            <p>Havet dekker 70 prosent av overflaten på jorden og rommer 95 prosent av leveområdene på planeten vår. Det gir oss oksygen, mye av ferskvannet vi drikker og maten vi spiser. Klimaendringer, overfiske og forurensning truer livet i havet - og oss.</p>
+         </div>
+      </section>
 
+     
+
+      <footer>
+         <div class="footer-item1">
+            <h3><u>Havfruepartiet</h3></u>
+            <div class="textbox">
+               <a href="#">Våre hjertesaker</a>
+               <a href="#">Hvorfor er havet viktig?</a>
+               <a href="#">Om partiet</a>
+            </div>
+         </div>
+         <div class="footer-item2">
+           <h3><u>Kontakt</h3></u>
+           <div class="textbox2">
+            <p>havfruepartiet@havet.no</p>
+            <p>+47 98 76 54 32</p>
+
+           </div>
          </div>
         
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kIE6gb7F7Ws" title="La barna vokse opp med et sunt og levende hav" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="video om viktigheten av havet"></iframe>
-   
-      </section>
-      <section class="section" id="section3">tredje section</section>
+         
 
-      <footer class="footer">
-         <div class="section-box">footer navigation</div>
-         <div class="section-box">konakt, registerr etc</div>
-         <div class="section-box">sosiale medier</div>
+           
+         </div>
       </footer>
    </body>
 </html>
