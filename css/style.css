@@ -59,7 +59,7 @@ body {
    width: 100%; 
    height: 90vh;
    flex-direction: column;
-   background-image: var(--gradient), url("/assets/images/images/ocean-img.png");
+   background-image: var(--gradient), url("../assets/img/ocean-img.png");
    background-size: cover;
    justify-content: center;
   
@@ -154,25 +154,25 @@ p {
 }
 
 .section1-img1 {
-   background-image: url("../assets/images/plast-havet.png");
+   background-image: url("../assets/img/plast-havet.png");
    background-size: cover;
    width: 100%;
 }
 
 .section1-img2 {
-   background-image: url("../assets/images/menneske-siluett.png");
+   background-image: url("../assets/img/menneske-siluett.png");
    background-size: cover;
    width: 100%;
 }
 
 .section1-img3 {
-   background-image: url("../assets/images/fiskegarn.png");
+   background-image: url("../assets/img/fiskegarn.png");
    background-size: cover;
    width: 100%;
 }
 
 .section1-img4 {
-   background-image: url("../assets/images/natur.png");
+   background-image: url("../assets/img/natur.png");
    background-size: cover;
    width: 100%;
 }
@@ -202,7 +202,7 @@ p {
 
 #section2   {
 
-   background-image: var(--gradient),url('../assets/images/section2-bg-jelly2.jpg');
+   background-image: var(--gradient),url('../assets/img/section2-bg-jelly2.jpg');
    background-size: cover;  
 
 }
@@ -278,7 +278,7 @@ p {
 
 .section3-item1 {
    width: 23%;
-   background-image: url('../assets/images/nyhetsbrev-wave.jpg');
+   background-image: url('../assets/img/nyhetsbrev-wave.jpg');
    background-size: cover;
    
 }
@@ -318,7 +318,7 @@ form > input {
 
 /* section 4 */
 #section4 {
-   background-image: url("../assets/images/wave.png");
+   background-image: url("../assets/img/wave.png");
    background-size: cover;
    padding: 3em;
 }
