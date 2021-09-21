@@ -1,15 +1,3 @@
-:root {
-   --blue: #66a5a1;
-   --light: whitesmoke;
-   --dark: rgb(49, 48, 48);
-   --gold: #c0a583;
-   --gradient: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.82),
-      rgba(0, 0, 0, 0.13)
-   );
-}
-
 html {
    font-size: 16px;
    scroll-behavior: smooth;
@@ -31,12 +19,11 @@ body {
    height: 11vh;
    margin: 0 auto;
    flex-wrap: wrap;
-   position: fixed;
+   /*position: fixed;*/
    flex-direction: row;
    justify-content: center;
    background-color: var(--light);
 }
-
 
 .flex-item {
    display: flex;
@@ -58,13 +45,12 @@ body {
 /* frontpage */
 .flex-hero-container {
    display: flex;
-   width: 100%; 
-   height: 100vh;
+   width: 100%;
+   height: 90vh;
    flex-direction: column;
    background-image: var(--gradient), url("../assets/img/ocean-img.png");
    background-size: cover;
    justify-content: center;
-  
 }
 
 .flex-hero-item {
@@ -76,7 +62,6 @@ body {
    padding: 30px;
    /* add shadow*/
 }
-
 
 .flex-hero-item h1,
 .flex-hero-item a,
@@ -105,45 +90,41 @@ p {
 
 .button1 a:hover {
    border-color: var(--gold);
-   color:var(--gold);
+   color: var(--gold);
 }
 
 /* sections */
-#section0,
-#section1,
-#section2,
-#section3
-
-{
+.section {
    width: 100%;
    height: 100vh;
 }
 
 /* section 0 */
 #section0 {
-   background-image: url('../assets/img/skilpadde.jpg');
+   background-image: url("../assets/img/skilpadde.jpg");
    background-size: cover;
+   opacity: 95%;
 }
 .section0-flex {
-   display:flex;
+   display: flex;
    flex-direction: row;
-   width:100vw;
-   height:100vh;
+   width: 100vw;
+   height: 100vh;
    justify-content: space-evenly;
    align-items: center;
 }
 
-
-.section0-item1, .section0-item2 {
+.section0-item1,
+.section0-item2 {
    display: flex;
-   height:75vh;
-   border: 2px solid lightpink; 
+   height: 75vh;
+   border: 2px solid lightpink;
 }
 
 .section0-item1 {
    width: 23%;
-   background-image: url('../assets/img/wave.jpg');
-   background-size: cover; 
+   background-image: url("../assets/img/wave.jpg");
+   background-size: cover;
 }
 
 .section0-item2 {
@@ -151,15 +132,14 @@ p {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
 }
 
 .form-container > h3 {
    color: var(--light);
- padding:10px;
- text-align: center;
- font-size: 2.8em;
- margin-bottom:-4%;
+   padding: 10px;
+   text-align: center;
+   font-size: 2.8em;
+   margin-bottom: -4%;
 }
 
 form {
@@ -172,16 +152,16 @@ form > label {
 }
 
 form > input {
-   margin-top:1%;
-   width:60%;
-   height:20%;
-   padding:5px;
-} 
+   margin-top: 1%;
+   width: 60%;
+   height: 20%;
+   padding: 5px;
+}
 
 #submit {
    background-color: var(--blue);
    border-radius: 1px;
-   width:30%;
+   width: 30%;
    border: 1px solid var(--blue);
    font-size: 1.2em;
    color: var(--light);
@@ -190,9 +170,7 @@ form > input {
 #submit:hover {
    background-color: var(--gold);
    border: 1px solid var(--gold);
-   
 }
-
 
 /* section1 */
 #section1 > h2 {
@@ -201,17 +179,17 @@ form > input {
    padding: 10px;
    color: var(--gold);
    padding-top: 80px;
-   margin-bottom:-1.5%;
+   margin-bottom: -1.5%;
 }
 
 .img-flex-container {
    display: flex;
    width: 100%;
    height: 78vh;
-   padding:60px;
+   padding: 60px;
    flex-direction: row;
    flex-wrap: nowrap;
-   justify-content: center; 
+   justify-content: space-evenly;
 }
 
 .img-flex-item {
@@ -225,31 +203,29 @@ form > input {
 
 .img-flex-item:hover {
    border: 3px solid var(--dark);
- 
+}
+.section1-img1,
+.section1-img2,
+.section1-img3,
+.section1-img4 {
+   background-size: cover;
+   width: 100%;
 }
 
 .section1-img1 {
    background-image: url("../assets/img/plast-havet.png");
-   background-size: cover;
-   width: 100%;
 }
 
 .section1-img2 {
    background-image: url("../assets/img/menneske-siluett.png");
-   background-size: cover;
-   width: 100%;
 }
 
 .section1-img3 {
    background-image: url("../assets/img/fiskegarn.png");
-   background-size: cover;
-   width: 100%;
 }
 
 .section1-img4 {
    background-image: url("../assets/img/natur.png");
-   background-size: cover;
-   width: 100%;
 }
 
 .section1-img1 a,
@@ -270,16 +246,15 @@ form > input {
 .section1-img2 a:hover,
 .section1-img3 a:hover,
 .section1-img4 a:hover {
-   color:var(--gold);
+   color: var(--gold);
 }
 
 /*section 2*/
 
-#section2   {
-
-   background-image: var(--gradient),url('../assets/img/section2-bg-jelly2.jpg');
-   background-size: cover;  
-
+#section2 {
+   background-image: var(--gradient),
+      url("../assets/img/section2-bg-jelly2.jpg");
+   background-size: cover;
 }
 
 .section2-flex {
@@ -297,15 +272,14 @@ form > input {
    padding: 20px;
    height: 80vh;
    padding: 20px;
-   
 }
 
 .section2-item iframe {
    margin-top: 12%;
    margin-left: 3%;
-   width:37vw;
-   height:47vh;
-   padding:15px;
+   width: 37vw;
+   height: 47vh;
+   padding: 15px;
    border: 0.5px solid orange;
 }
 
@@ -313,7 +287,6 @@ form > input {
    font-size: 3.5em;
    color: var(--light);
    margin-left: 30px;
-
 }
 
 .section2-item > a {
@@ -326,7 +299,6 @@ form > input {
    text-decoration: none;
    text-align: center;
    font-size: 1.3em;
-
 }
 .section2-item > a:hover {
    border-color: var(--light);
@@ -369,22 +341,20 @@ form > input {
 .section3-item1 {
    width: 35%;
    padding-top: 5%;
-   padding-left: 5%; 
+   padding-left: 5%;
 }
 
 .section3-item2 {
    width: 29%;
    padding-top: 18%;
-   padding-left: 10%; 
-
+   padding-left: 10%;
 }
 
 .section3-item2 img {
-   width:32%;
-   height:26%;
+   width: 32%;
+   height: 26%;
    opacity: 75%;
 }
-
 
 .section3-item3 {
    width: 35%;
@@ -392,23 +362,25 @@ form > input {
    padding-right: 5%;
 }
 
-.section3-item1 p, .section3-item3 p {
+.section3-item1 p,
+.section3-item3 p {
    line-height: 1.5;
    color: var(--dark);
 }
 
 /* footer */
 footer {
-   display:flex;
+   display: flex;
    flex-direction: row;
-   width:100%;
-   height:50vh;
+   width: 100%;
+   height: 50vh;
    justify-content: space-evenly;
    background-color: rgba(0, 0, 0, 0.966);
 }
 
-.footer-item1, .footer-item2 {
-   height:28vh;
+.footer-item1,
+.footer-item2 {
+   height: 28vh;
    align-self: center;
 }
 
@@ -420,9 +392,10 @@ footer {
    width: 23%;
 }
 
-.footer-item1 h3, .footer-item2 h3 {
+.footer-item1 h3,
+.footer-item2 h3 {
    font-size: 1.3em;
-   padding:30px;
+   padding: 30px;
    color: var(--gold);
 }
 
@@ -434,13 +407,13 @@ footer {
 .textbox a {
    color: var(--gold);
    text-decoration: none;
-   padding:35px;
+   padding: 35px;
    font-size: 1.2em;
 }
 .textbox2 > p {
    color: var(--gold);
    text-decoration: none;
-   padding-left:30px;
+   padding-left: 30px;
    font-size: 1.2em;
 }
 

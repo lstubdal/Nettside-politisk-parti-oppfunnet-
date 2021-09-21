@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--arialbael-->
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="css/reset.css" />
-      <link rel="icon" type="image/svg" href="assets/img/mermaid.svg" />
+      <link rel="stylesheet" href="css/variables.css"/>
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image/svg" href="assets/img/mermaid.svg" />
       <title>Havfruepartiet</title>
+     
    </head>
 
-   <!-- add icon fp
-         legge titlebox i flex 1 item-->
+   <!--fikse id og section fikse navn  til lesbare-->
 
    <body>
-      <!--header-->
+      <!--header legge til nav-->
       <header class="flex-container" id="home">
          <div class="flex-item logo">
             <a href="#home">
@@ -56,8 +56,8 @@
          </div>
       </div>
 
-       <!--section 4-->
-       <section id="section0">
+       <!--section 0 legge til label for-->
+       <section class="section" id="section0">
          <div class="section0-flex">
             <div class="section0-item1"></div>
             <div class="section0-item2">
@@ -65,7 +65,7 @@
                   <h3>Bli medlem</h3>
                   <br />
                   <form action="result.html" method="GET">
-                     <label>Navn</label> <br />
+                     <label for="name">Navn</label> <br />
                      <input type="text" name="name" id="name" autocomplete="off" required />
                      <br />
                      <br />
@@ -88,8 +88,8 @@
          </div>
       </section>
 
-      <!--hjertesaker section1-->
-      <section id="section1">
+      <!--section1-->
+      <section class="section" id="section1">
          <h2>Våre hjertesaker</h2>
          <div class="img-flex-container">
             <div class="img-flex-item">
@@ -117,8 +117,8 @@
       
       </section>
 
-      <!--hvorfor er havet vitkig? section2-->
-      <section id="section2">
+      <!--section2 -->
+      <section class="section" id="section2">
   
          <div class="section2-flex">
             <div class="section2-item">
@@ -144,7 +144,7 @@
 
 
       <!--section 3-->
-      <section id="section3">
+      <section class="section" id="section3">
          <div class="section3-textbox">
             <h2>Om Havfruepartiet</h2>
             <div class="section3-flex">
@@ -185,12 +185,10 @@
            <div class="textbox2">
             <p>havfruepartiet@havet.no</p>
             <p>+47 98 76 54 32</p>
+            <!--add some-->
 
            </div>
          </div>
-        
-         
-
            
          </div>
       </footer>
