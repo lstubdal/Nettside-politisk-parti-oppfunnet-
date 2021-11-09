@@ -1,5 +1,4 @@
 :root { 
-    --blue: #66a5a1;
     --light: whitesmoke;
     --dark: rgb(49, 48, 48);
     --gold: #c0a583;
@@ -8,4 +7,5 @@
        rgba(0, 0, 0, 0.82),
        rgba(0, 0, 0, 0.13)
     );
+    --submit-button: #66a5a1;
  }
