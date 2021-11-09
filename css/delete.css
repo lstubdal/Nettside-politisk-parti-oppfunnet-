@@ -1,0 +1,428 @@
+html {
+   font-size: 16px;
+   scroll-behavior: smooth;
+}
+body {
+   font-family: verdana;
+}
+
+header {
+   display: flex;
+   width: 100%;
+   height: 11vh;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   /*position: fixed;*/
+   flex-direction: row;
+   justify-content: center;
+   background-color: var(--light);
+}
+
+section {
+   width: 100%;
+   height: 100vh;
+}
+
+.logo {
+   padding: 20px;
+   margin-left: 10px;
+   flex-grow: 0.9;
+   opacity: 90%;
+}
+
+.header-flex-item {
+   display: flex;
+   padding: 10px 20px;
+   align-items: center;
+}
+
+.header-flex-item a {
+   text-decoration: none;
+   color: var(--dark);
+   text-align: center;
+   font-size: 1.1em;
+}
+
+.header-flex-item a:hover {
+   color: var(--gold);
+}
+
+/* frontpage */
+.flex-hero-container {
+   display: flex;
+   width: 100%;
+   height: 90vh;
+   flex-direction: column;
+   background-image: var(--gradient), url("../assets/img/ocean-img.png");
+   background-size: cover;
+   justify-content: center;
+}
+
+.flex-hero-item {
+   display: flex;
+   width: 500px;
+   height: 80px;
+   margin: 0 auto;
+   justify-content: center;
+   padding: 30px;
+   /* add shadow*/
+}
+
+.flex-hero-item h1,
+.flex-hero-item a,
+p {
+   color: var(--light);
+   line-height: 50px;
+}
+
+.flex-hero-item h1 {
+   font-size: 3.8em;
+}
+.flex-hero-item p {
+   font-size: 2.1em;
+}
+.flex-hero-item .button1 {
+   font-size: 1.5em;
+}
+
+.button1 a {
+   border: 2.5px solid var(--light);
+   border-radius: 2px;
+   padding: 8px 50px 8px 50px;
+   text-align: center;
+   text-decoration: none;
+}
+
+.button1 a:hover {
+   border-color: var(--gold);
+   color: var(--gold);
+}
+
+/* become member*/
+
+#become-member {
+   background-image: url("../assets/img/turtle.jpg");
+   background-size: cover;
+   opacity: 95%;
+}
+.become-member-flex {
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 100vh;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.become-member-item1,
+.become-member-item2 {
+   display: flex;
+   height: 75vh;
+   border: 2px solid lightpink;
+}
+
+.become-member-item1 {
+   width: 23%;
+   background-image: url("../assets/img/wave.jpg");
+   background-size: cover;
+}
+
+.become-member-item2 {
+   width: 50%;
+   padding-left: 180px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-container > h3 {
+   color: var(--light);
+   padding: 10px;
+   text-align: center;
+   font-size: 2.8em;
+   margin-bottom: -4%;
+}
+
+form {
+   text-align: center;
+}
+
+form > label {
+   font-size: 1.2em;
+   color: var(--light);
+}
+
+form > input {
+   margin-top: 1%;
+   width: 60%;
+   height: 20%;
+   padding: 5px;
+}
+
+#submit {
+   background-color: var(--submit-button);
+   border-radius: 1px;
+   width: 30%;
+   border: 1px solid var(--submit-button);
+   font-size: 1.2em;
+   color: var(--light);
+}
+
+#submit:hover {
+   background-color: var(--gold);
+   border: 1px solid var(--gold);
+}
+
+/* passionate-cause */
+#passionate-cause > h2 {
+   font-size: 2.2em;
+   text-align: center;
+   padding: 10px;
+   color: var(--gold);
+   padding-top: 80px;
+   margin-bottom: -1.5%;
+}
+
+.img-flex-container {
+   display: flex;
+   width: 100%;
+   height: 78vh;
+   padding: 60px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+}
+
+.img-flex-item {
+   display: flex;
+   width: 21%;
+   padding: 10px;
+   align-items: stretch;
+   border: 1.9px solid var(--gold);
+   border-radius: 1px;
+}
+
+.img-flex-item:hover {
+   border: 3px solid var(--dark);
+}
+.causes__ocean,
+.causes__minority,
+.causes__fishing,
+.causes__enviroment {
+   background-size: cover;
+   width: 100%;
+}
+
+.causes__ocean {
+   background-image: url("../assets/img/plast-havet.png");
+}
+
+.causes__minority {
+   background-image: url("../assets/img/menneske-siluett.png");
+}
+
+.causes__fishing {
+   background-image: url("../assets/img/fiskegarn.png");
+}
+
+.causes__enviroment {
+   background-image: url("../assets/img/natur.png");
+}
+
+.causes__ocean a,
+.causes__minority a,
+.causes__fishing a,
+.causes__enviroment a {
+   display: flex;
+   align-items: flex-end; /*funket ikke*/
+   margin-top: 118%;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+   color: var(--light);
+   font-size: 1.5em;
+   text-decoration: none;
+}
+.causes__ocean a:hover,
+.causes__minority a:hover,
+.causes__fishing a:hover,
+.causes__enviroment a:hover {
+   color: var(--gold);
+}
+
+/***** importance of ocean*****/
+
+#importance-ocean {
+   background-image: var(--gradient),
+      url("../assets/img/section2-bg-jelly2.jpg");
+   background-size: cover;
+}
+
+.importance-ocean-flex {
+   display: flex;
+   width: 100%;
+   height: 90vh;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.importance-ocean-item {
+   display: flex;
+   padding: 20px;
+   height: 80vh;
+   padding: 20px;
+}
+
+.importance-ocean-item iframe {
+   margin-top: 12%;
+   margin-left: 3%;
+   width: 37vw;
+   height: 47vh;
+   padding: 15px;
+   border: 0.5px solid orange;
+}
+
+.importance-ocean-item h2 {
+   font-size: 3.5em;
+   color: var(--light);
+   margin-left: 30px;
+}
+
+.importance-ocean-item > a {
+   align-self: flex-end;
+   margin-left: -26%;
+   width: 210px;
+   height: 30px;
+   border-left: 2px solid orange;
+   color: var(--light);
+   text-decoration: none;
+   text-align: center;
+   font-size: 1.3em;
+}
+.importance-ocean-item > a:hover {
+   border-color: var(--light);
+}
+
+/* section 3 */
+#about-political-party {
+   background-image: url("../assets/img/wave.png");
+   background-size: cover;
+   padding: 3em;
+}
+
+.about-political-party-textbox {
+   display: flex;
+   align-self: center;
+   width: 85vw;
+   height: 80vh;
+   margin: 0 auto;
+   border-radius: 1.5px;
+   background-color: var(--light);
+}
+
+.about-political-party-textbox > h2 {
+   padding: 80px;
+   text-align: left;
+   margin-bottom: -3%;
+   font-size: 2em;
+   writing-mode: vertical-lr;
+}
+
+.about-political-party-flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   height: 84%;
+   background-color: rgb(238, 141, 141);
+}
+
+.about-political-party-item1 {
+   width: 35%;
+   padding-top: 5%;
+   padding-left: 5%;
+}
+
+.about-political-party-item2 {
+   width: 29%;
+   padding-top: 18%;
+   padding-left: 10%;
+}
+
+.about-political-party-item2 img {
+   width: 32%;
+   height: 26%;
+   opacity: 75%;
+}
+
+.about-political-party-item3 {
+   width: 35%;
+   padding-top: 5%;
+   padding-right: 5%;
+}
+
+.about-political-party-item1 p,
+.about-political-party-item3 p {
+   line-height: 1.5;
+   color: var(--dark);
+}
+
+/* footer */
+footer {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 50vh;
+   justify-content: space-evenly;
+   background-color: rgba(0, 0, 0, 0.966);
+}
+
+.footer-item1,
+.footer-item2 {
+   height: 28vh;
+   align-self: center;
+}
+
+.footer-item1 {
+   width: 60%;
+}
+
+.footer-item2 {
+   width: 23%;
+}
+
+.footer-item1 h3,
+.footer-item2 h3 {
+   font-size: 1.3em;
+   padding: 30px;
+   color: var(--gold);
+}
+
+.textbox {
+   display: flex;
+   flex-direction: row;
+}
+
+.textbox a {
+   color: var(--gold);
+   text-decoration: none;
+   padding: 35px;
+   font-size: 1.2em;
+}
+.textbox2 > p {
+   color: var(--gold);
+   text-decoration: none;
+   padding-left: 30px;
+   font-size: 1.2em;
+}
+
+.textbox a:hover {
+   color: var(--light);
+}
+
+.textbox2 {
+   display: flex;
+   flex-direction: column;
+}

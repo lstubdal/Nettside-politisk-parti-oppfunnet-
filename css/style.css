@@ -1,427 +1,375 @@
-html {
-   font-size: 16px;
-   scroll-behavior: smooth;
-}
 body {
-   font-family: verdana;
+    scroll-behavior: smooth;
+    font-size: var(--standard);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
-header {
-   display: flex;
-   width: 100%;
-   height: 11vh;
-   margin: 0 auto;
-   flex-wrap: wrap;
-   /*position: fixed;*/
-   flex-direction: row;
-   justify-content: center;
-   background-color: var(--light);
+/******* Header *******/
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+.header__logo {
+    flex-grow: 1;
+    padding: 1%;
+    opacity: 90%;
+    cursor: pointer;
+    
+}
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; 
+}
+.header__nav a {
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    font-size: var(--nav);
+    cursor: pointer;
+    padding: 0.1%;
+}
+.header__nav a:hover {
+    color: var(--gold);
+}
+.header__nav--cta {
+    width: 12%;
+    text-decoration: underline 1.5px var(--dark);
+    text-align: center;
+    margin-right: 5%;
 }
 
-section {
-   width: 100%;
-   height: 100vh;
+/******* Frontpage *******/
+
+.frontpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-image: var(--gradient), url('/assets/img/ocean-img.png');
+    background-size: cover;  
+}
+.frontpage__title {
+    font-size: 3.3em;
+    color: var(--light);
+    margin-top: 8%;
+}
+.frontpage__quote {
+    font-size: 2em;
+    color: var(--light);
+    padding: 2.2%;
+}
+.frontpage__link {
+    font-size: 1.5em;
+    padding: 0.5%;
+    color: var(--light);
+    border: 2px solid var(--light);
+    padding: 8px 35px 8px 35px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.frontpage__link:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    cursor: pointer;
 }
 
-.logo {
-   padding: 20px;
-   margin-left: 10px;
-   flex-grow: 0.9;
-   opacity: 90%;
+.frontpage__arrow {
+    height: 25%;
+    padding: 2%;
+    cursor: pointer;
 }
 
-.header-flex-item {
-   display: flex;
-   padding: 10px 20px;
-   align-items: center;
-}
+/******* Become member *******/
 
-.header-flex-item a {
-   text-decoration: none;
-   color: var(--dark);
-   text-align: center;
-   font-size: 1.1em;
-}
+.member {
+    background-image: url("../assets/img/turtle.jpg");
+    background-size: cover;
+    opacity: 95%;
+ }
+ .member__container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .member__img {
+    display: flex;
+    width: 23%;
+    height: 75vh;
+    background-image: url("../assets/img/wave.jpg");
+    background-size: cover;
+    border: 2px solid var(--gold);
+ }
+ .member__register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 75vh;
+    padding-left: 15%;
+    border: 2px solid var(--gold);
+ }
+ .member__title {
+    color: var(--light);
+    padding: 10px;
+    font-size: 2.8em;
+    margin-bottom: -4%;
+ }
+ .member__label {
+    font-size: 1.2em;
+    color: var(--light);
+ }
+ .member__input{
+    margin-top: 1%;
+    width: 100%;
+    height: 9%;
+    padding: 5px;
+ }
+ .member__submit {
+    width: 100%;
+    height: 12%;
+    border: none;
+    font-size: 1.2em;
+    color: var(--dark);
+    background-color: var(--gold);
+ }
+ .member__submit:hover {
+    color: var(--light);
+    background-color: #66a5a1;
+ }
 
-.header-flex-item a:hover {
-   color: var(--gold);
-}
+ /******* Passionate causes *******/
 
-/* frontpage */
-.flex-hero-container {
-   display: flex;
-   width: 100%;
-   height: 90vh;
-   flex-direction: column;
-   background-image: var(--gradient), url("../assets/img/ocean-img.png");
-   background-size: cover;
-   justify-content: center;
-}
+ .causes {
+     height: 100vh;
+     width: 100vw;
+ }
+ .causes__title {
+    font-size: 2.2em;
+    text-align: center;
+    padding: 10px;
+    color: var(--gold);
+    padding-top: 80px;
+    margin-bottom: -1.5%;
+ }
+ .causes__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 78vh;
+    padding: 60px;
+ }
+ .causes__cause {
+    display: flex;
+    width: 21%;
+    border: 1.9px solid var(--gold);
+    border-radius: 1px;
+    padding: 10px;
+ }
+ .causes__cause a {
+    margin-top: 118%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: var(--light);
+    font-size: 1.5em;
+    text-decoration: none;
+ }
+ .causes__cause:hover {
+    border: 3px solid var(--dark);
+ }
+ .causes__ocean {
+    background-size: cover;
+    background-image: url("../assets/img/plastic-ocean.png");
+ }
+ .causes__minority {
+    background-size: cover;
+    background-image: url("../assets/img/humans.png");
+ }
+ .causes__fishing {
+    background-size: cover;
+    background-image: url("../assets/img/fishing-net.png");
+ }
+ .causes__enviroment {
+    background-size: cover;
+    background-image: url("../assets/img/nature.png");
+ }
+ 
+ /***** importance of the ocean *****/
 
-.flex-hero-item {
-   display: flex;
-   width: 500px;
-   height: 80px;
-   margin: 0 auto;
-   justify-content: center;
-   padding: 30px;
-   /* add shadow*/
-}
+.ocean {
+    background-image: var(--gradient),
+       url("../assets/img/section2-bg-jelly2.jpg");
+    background-size: cover;
+ }
 
-.flex-hero-item h1,
-.flex-hero-item a,
-p {
-   color: var(--light);
-   line-height: 50px;
-}
+ .ocean__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 93%;
+    height: 100vh;
+ }
+ .ocean__item {
+    display: flex;
+    padding: 20px;
+    height: 80vh;
+ }
+ .ocean__video{
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 40vw;
+    height: 55vh;
+    padding: 15px;
+    border: 0.5px solid orange;
+ }
+ .ocean__title {
+    font-size: 3.3em;
+    color: var(--light);
+    margin-left: 30px;
+ }
+ .ocean__cta{
+    align-self: flex-end;
+    margin-left: -15%;
+    width: 220px;
+    height: 30px;
+    margin-bottom: 5%; 
+    border-left: 2px solid orange;
+    color: var(--light);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+ }
+ .ocean__cta:hover {
+     border: none;
+     text-decoration: underline orange;
+ }
+ .importance-ocean-item > a:hover {
+    border-color: var(--light);
+ }
 
-.flex-hero-item h1 {
-   font-size: 3.8em;
-}
-.flex-hero-item p {
-   font-size: 2.1em;
-}
-.flex-hero-item .button1 {
-   font-size: 1.5em;
-}
+ /****** about the party ******/
+ .about{
+    background-image: url("../assets/img/wave.png");
+    background-size: cover;
+    padding: 3em;
+ }
+ 
+ .about__container {
+    display: flex;
+    align-self: center;
+    width: 85vw;
+    height: 80vh;
+    margin: 0 auto;
+    border-radius: 1.5px;
+    background-color: var(--light);
+ }
+ .about__title {
+    padding: 80px;
+    text-align: left;
+    margin-bottom: -3%;
+    font-size: 2em;
+    writing-mode: vertical-lr;
+ }
+ .about__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 84%;
+    background-color: var(--gold);
+ }
+ .about__content--left {
+    width: 30%;
+    padding-top: 5%;
+    line-height: 1.5;
+    color: var(--dark);
+ }
+ .about__content--right {
+    width: 30%;
+    padding-top: 5%;
+    line-height: 1.5;
+    color: var(--dark);
+ }
+ .about__seashell {
+    width: 22%;
+    height: 50%;
+    padding: 6%;
+    margin-top: 6%; 
+ }
+ 
+/****** footer *****/
 
-.button1 a {
-   border: 2.5px solid var(--light);
-   border-radius: 2px;
-   padding: 8px 50px 8px 50px;
-   text-align: center;
-   text-decoration: none;
-}
-
-.button1 a:hover {
-   border-color: var(--gold);
-   color: var(--gold);
-}
-
-/* become member*/
-#become-member {
-   background-image: url("../assets/img/skilpadde.jpg");
-   background-size: cover;
-   opacity: 95%;
-}
-.become-member-flex {
-   display: flex;
-   flex-direction: row;
-   width: 100vw;
-   height: 100vh;
-   justify-content: space-evenly;
-   align-items: center;
-}
-
-.become-member-item1,
-.become-member-item2 {
-   display: flex;
-   height: 75vh;
-   border: 2px solid lightpink;
-}
-
-.become-member-item1 {
-   width: 23%;
-   background-image: url("../assets/img/wave.jpg");
-   background-size: cover;
-}
-
-.become-member-item2 {
-   width: 50%;
-   padding-left: 180px;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.form-container > h3 {
-   color: var(--light);
-   padding: 10px;
-   text-align: center;
-   font-size: 2.8em;
-   margin-bottom: -4%;
-}
-
-form {
-   text-align: center;
-}
-
-form > label {
-   font-size: 1.2em;
-   color: var(--light);
-}
-
-form > input {
-   margin-top: 1%;
-   width: 60%;
-   height: 20%;
-   padding: 5px;
-}
-
-#submit {
-   background-color: var(--submit-button);
-   border-radius: 1px;
-   width: 30%;
-   border: 1px solid var(--submit-button);
-   font-size: 1.2em;
-   color: var(--light);
-}
-
-#submit:hover {
-   background-color: var(--gold);
-   border: 1px solid var(--gold);
-}
-
-/* passionate-cause */
-#passionate-cause > h2 {
-   font-size: 2.2em;
-   text-align: center;
-   padding: 10px;
-   color: var(--gold);
-   padding-top: 80px;
-   margin-bottom: -1.5%;
-}
-
-.img-flex-container {
-   display: flex;
-   width: 100%;
-   height: 78vh;
-   padding: 60px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-evenly;
-}
-
-.img-flex-item {
-   display: flex;
-   width: 21%;
-   padding: 10px;
-   align-items: stretch;
-   border: 1.9px solid var(--gold);
-   border-radius: 1px;
-}
-
-.img-flex-item:hover {
-   border: 3px solid var(--dark);
-}
-.passionate-cause-img1,
-.passionate-cause-img2,
-.passionate-cause-img3,
-.passionate-cause-img4 {
-   background-size: cover;
-   width: 100%;
-}
-
-.passionate-cause-img1 {
-   background-image: url("../assets/img/plast-havet.png");
-}
-
-.passionate-cause-img2 {
-   background-image: url("../assets/img/menneske-siluett.png");
-}
-
-.passionate-cause-img3 {
-   background-image: url("../assets/img/fiskegarn.png");
-}
-
-.passionate-cause-img4 {
-   background-image: url("../assets/img/natur.png");
-}
-
-.passionate-cause-img1 a,
-.passionate-cause-img2 a,
-.passionate-cause-img3 a,
-.passionate-cause-img4 a {
-   display: flex;
-   align-items: flex-end; /*funket ikke*/
-   margin-top: 118%;
-   justify-content: center;
-   text-align: center;
-   padding: 10px;
-   color: var(--light);
-   font-size: 1.5em;
-   text-decoration: none;
-}
-.passionate-cause-img1 a:hover,
-.passionate-cause-img2 a:hover,
-.passionate-cause-img3 a:hover,
-.passionate-cause-img4 a:hover {
-   color: var(--gold);
-}
-
-/*importance of ocean*/
-
-#importance-ocean {
-   background-image: var(--gradient),
-      url("../assets/img/section2-bg-jelly2.jpg");
-   background-size: cover;
-}
-
-.importance-ocean-flex {
-   display: flex;
-   width: 100%;
-   height: 90vh;
-   align-items: center;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-}
-
-.importance-ocean-item {
-   display: flex;
-   padding: 20px;
-   height: 80vh;
-   padding: 20px;
-}
-
-.importance-ocean-item iframe {
-   margin-top: 12%;
-   margin-left: 3%;
-   width: 37vw;
-   height: 47vh;
-   padding: 15px;
-   border: 0.5px solid orange;
-}
-
-.importance-ocean-item h2 {
-   font-size: 3.5em;
-   color: var(--light);
-   margin-left: 30px;
-}
-
-.importance-ocean-item > a {
-   align-self: flex-end;
-   margin-left: -26%;
-   width: 210px;
-   height: 30px;
-   border-left: 2px solid orange;
-   color: var(--light);
-   text-decoration: none;
-   text-align: center;
-   font-size: 1.3em;
-}
-.importance-ocean-item > a:hover {
-   border-color: var(--light);
-}
-
-/* section 3 */
-#about-political-party {
-   background-image: url("../assets/img/wave.png");
-   background-size: cover;
-   padding: 3em;
-}
-
-.about-political-party-textbox {
-   display: flex;
-   align-self: center;
-   width: 85vw;
-   height: 80vh;
-   margin: 0 auto;
-   border-radius: 1.5px;
-   background-color: var(--light);
-}
-
-.about-political-party-textbox > h2 {
-   padding: 80px;
-   text-align: left;
-   margin-bottom: -3%;
-   font-size: 2em;
-   writing-mode: vertical-lr;
-}
-
-.about-political-party-flex {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   width: 100%;
-   height: 84%;
-   background-color: rgb(238, 141, 141);
-}
-
-.about-political-party-item1 {
-   width: 35%;
-   padding-top: 5%;
-   padding-left: 5%;
-}
-
-.about-political-party-item2 {
-   width: 29%;
-   padding-top: 18%;
-   padding-left: 10%;
-}
-
-.about-political-party-item2 img {
-   width: 32%;
-   height: 26%;
-   opacity: 75%;
-}
-
-.about-political-party-item3 {
-   width: 35%;
-   padding-top: 5%;
-   padding-right: 5%;
-}
-
-.about-political-party-item1 p,
-.about-political-party-item3 p {
-   line-height: 1.5;
-   color: var(--dark);
-}
-
-/* footer */
-footer {
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   height: 50vh;
-   justify-content: space-evenly;
-   background-color: rgba(0, 0, 0, 0.966);
-}
-
-.footer-item1,
-.footer-item2 {
-   height: 28vh;
-   align-self: center;
-}
-
-.footer-item1 {
-   width: 60%;
-}
-
-.footer-item2 {
-   width: 23%;
-}
-
-.footer-item1 h3,
-.footer-item2 h3 {
-   font-size: 1.3em;
-   padding: 30px;
-   color: var(--gold);
-}
-
-.textbox {
-   display: flex;
-   flex-direction: row;
-}
-
-.textbox a {
-   color: var(--gold);
-   text-decoration: none;
-   padding: 35px;
-   font-size: 1.2em;
-}
-.textbox2 > p {
-   color: var(--gold);
-   text-decoration: none;
-   padding-left: 30px;
-   font-size: 1.2em;
-}
-
-.textbox a:hover {
-   color: var(--light);
-}
-
-.textbox2 {
-   display: flex;
-   flex-direction: column;
-}
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.966);
+ }
+ 
+ .footer__item1 {
+    padding: 3%;
+    flex-grow: 2;
+ }
+ 
+ .footer__contact {
+    padding: 3%;
+    flex-grow: 1;
+ }
+ 
+ .footer__title {
+    font-size: 1.3em;
+    padding: 30px;
+    color: var(--gold);
+ }
+ 
+ .footer__nav{
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .footer__nav a {
+    color: var(--gold);
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.2em;
+ }
+ .footer__nav a:hover {
+    color: var(--light);
+ }
+ .footer__info {
+     padding: 30px;
+ }
+ .footer__info p {
+    color: var(--gold);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+ }
+ 
+ .footer__info p:hover {
+    color: var(--light);
+ }
+ 
+ .footer__info {
+    display: flex;
+    flex-direction: column;
+ }
+ 
