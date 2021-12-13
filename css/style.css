@@ -155,6 +155,25 @@ body {
     background-color: #66a5a1;
  }
 
+ .result {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     font-size: 1.5em;
+ }
+
+ .result__return {
+     text-decoration: none;
+     color: var(--dark);
+ }
+
+ .result__return:hover {
+    text-decoration: underline;
+}
+
  /******* Passionate causes *******/
 
  #causes {
@@ -347,7 +366,7 @@ body {
     color: var(--gold);
  }
  
- .footer__nav{
+ .footer__nav {
     display: flex;
     flex-direction: row;
  }
@@ -379,4 +398,3 @@ body {
     display: flex;
     flex-direction: column;
  }
- 
